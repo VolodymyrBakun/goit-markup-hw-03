@@ -24,9 +24,47 @@
   --Light-color: #f4f4fd;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+ul,
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+
 body {
   font-family: "Roboto", sans-serif;
   color: var(--Text-color);
+}
+
+.container {
+  width: 1158px;
+  margin: 0 auto;
 }
 
 .list {
@@ -43,7 +81,17 @@ body {
 
 /* -----------HEADER------------- */
 .header {
+  background: #FFFFFF;
+/* CORNFLOWER */
+
+border-bottom: 1px solid var(--Accent-color);
 }
+
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
 .logo {
   font-family: "Raleway", sans-serif;
   font-style: normal;
@@ -54,6 +102,10 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--Dark-color);
+  padding-left: 15px;
+ 
+  margin-top: 24px;
+  margin-bottom: 24px;
 }
 .logo-part {
   font-family: "Raleway", sans-serif;
@@ -73,7 +125,16 @@ body {
 }
 
 .header-navigation {
+  margin-left: 76px;
+  
 }
+
+.header-list {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
 .header-item {
 }
 .header-link {
@@ -89,6 +150,11 @@ body {
 }
 
 .header-contact {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin-left: auto;
+  padding-right: 15px;
 }
 .header-contact-item {
 }
@@ -109,6 +175,11 @@ body {
 .hero {
   background: var(--Dark-color);
 }
+
+.hero-wrap {
+
+}
+
 .hero-title {
   font-weight: 600;
   font-size: 56px;
@@ -116,6 +187,8 @@ body {
   text-align: center;
   letter-spacing: 0.02em;
   color: #ffffff;
+  width: 494px;
+  
 }
 .hero-btn {
   font-family: inherit;
