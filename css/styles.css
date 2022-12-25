@@ -79,17 +79,16 @@ body {
 }
 
 .section {
-  padding-left: 15px;
-  padding-right: 15px;
   padding-bottom: 120px;
 }
 
 /* -----------HEADER------------- */
 .header {
   background: #ffffff;
-  /* CORNFLOWER */
 
   border-bottom: 1px solid var(--Accent-color);
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .header-container {
@@ -109,8 +108,7 @@ body {
   color: var(--Dark-color);
   padding-left: 15px;
 
-  margin-top: 24px;
-  margin-bottom: 24px;
+  
 }
 .logo-part {
   font-family: "Raleway", sans-serif;
@@ -191,7 +189,7 @@ body {
   text-align: center;
   letter-spacing: 0.02em;
   color: #ffffff;
-  max-width: 495px;
+  max-width: 500px;
   margin: 0 auto;
 }
 .hero-btn {
@@ -223,9 +221,10 @@ body {
 .about-list {
   display: flex;
   gap: 24px;
-  width: ((100% - 72)/4);
+  
 }
 .about-item {
+  flex-basis: calc((100% - 72px)/4);
 }
 .about-title {
   font-weight: 500;
@@ -245,7 +244,7 @@ body {
 /* -------------------Section PRODUCTS----------------- */
 
 .products {
-  padding-bottom: 120px;
+  
 }
 .products-title {
   font-weight: 600;
@@ -262,6 +261,7 @@ body {
   gap: 24px;
 }
 .products-item {
+  flex-basis: calc((100% - 48px)/3);
 }
 .products-img {
 }
@@ -378,7 +378,7 @@ body {
   align-items: center;
   gap: 24px;
   justify-content: center;
-  margin-top: 96px;
+  padding-top: 96px;
 }
 
 .filter-btn {
@@ -401,15 +401,16 @@ body {
 .filter-btn:focus {
   color: #ffffff;
   background: var(--Pressed-state-color);
+  border-color: var(--Pressed-state-color);
 }
 
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 24px;
+  column-gap: 24px;
   row-gap: 48px;
-  margin-top: 72px;
-  margin-bottom: 120px;
+  padding-top: 72px;
+  padding-bottom: 120px;
 }
 
 .portfolio-item {
@@ -420,7 +421,7 @@ body {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--Dark-color);
-  padding-top: 32px;
+  
   margin-bottom: 8px;
 }
 .portfolio-item-text {
@@ -428,11 +429,11 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--Text-color);
-  padding-bottom: 32px;
+  
 }
 
 .item-descr-wrap {
   border: 1px solid var(--Accent-color);
   border-top: none;
-  padding-left: 16px;
+  padding: 32px 16px;
 }
