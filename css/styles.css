@@ -293,6 +293,7 @@ body {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   border-radius: 0px 0px 4px 4px;
+  
 }
 
 .team-item-img {
@@ -306,6 +307,7 @@ body {
   color: var(--Dark-color);
   margin-top: 32px;
   margin-bottom: 8px;
+
 }
 .team-item-text {
   font-size: 16px;
@@ -349,6 +351,7 @@ body {
   letter-spacing: 0.02em;
   color: var(--Accent-color);
   width: 264px;
+  margin-top: 16px;
 }
 
 /* ---------PORTFOLIO----------- */
@@ -369,9 +372,17 @@ body {
   margin: -1px;
 }
 
+.filter-wrap {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  justify-content: center;
+  margin-top: 96px;
+}
+
 .filter-btn {
   font-family: inherit;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   align-items: center;
@@ -382,6 +393,7 @@ body {
   background: var(--Light-color);
   border: 1px solid #e7e9fc;
   border-radius: 4px;
+  padding: 12px 24px;
 }
 
 .filter-btn:hover,
@@ -391,6 +403,12 @@ body {
 }
 
 .portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  row-gap: 48px;
+  margin-top: 72px;
+  margin-bottom: 120px;
 }
 
 .portfolio-item {
@@ -401,10 +419,19 @@ body {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--Dark-color);
+  padding-top: 32px;
+  margin-bottom: 8px;
 }
 .portfolio-item-text {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--Text-color);
+  padding-bottom: 32px;
+}
+
+.item-descr-wrap {
+  border: 1px solid var(--Accent-color);
+  border-top: none;
+  padding-left: 16px;
 }
